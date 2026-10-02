@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SpendWise</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Inter&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>SpendWise</h1>
+        <p>Simple Budget and Expense Tracker</p>
+    </header>
+
+    <main>
+
+        <section class="budget-section">
+            <h2>Budget Tracker</h2>
+            <p>Track your budget and manage your expenses easily.</p>
+        </section>
+
+        <section class="add-expense-section">
+            <h2>Add Expense</h2>
+
+            <form id="expense-form">
+
+                <label for="expense-name">Expense Name</label>
+                <input type="text" id="expense-name" placeholder="Enter expense name">
+
+                <label for="expense-amount">Amount</label>
+                <input type="number" id="expense-amount" placeholder="Enter amount">
+
+                <label for="expense-category">Category</label>
+                <select id="expense-category">
+                    <option value="Food">Food</option>
+                    <option value="Transport">Transport</option>
+                    <option value="Education">Education</option>
+                    <option value="Other">Other</option>
+                </select>
+
+                <button type="submit">Add Expense</button>
+
+            </form>
+        </section>
+
+        <section class="expense-section">
+            <h2>Your Expenses</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Expense</th>
+                        <th>Amount</th>
+                        <th>Category</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Groceries</td>
+                        <td>KSh 2,500</td>
+                        <td>Food</td>
+                    </tr>
+
+                    <tr>
+                        <td>Transport</td>
+                        <td>KSh 1,000</td>
+                        <td>Transport</td>
+                    </tr>
+
+                    <tr>
+                        <td>School Supplies</td>
+                        <td>KSh 1,500</td>
+                        <td>Education</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="balance-section">
+            <h2>Remaining Balance</h2>
+            <p id="result">Your remaining balance will appear here.</p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 SpendWise</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
